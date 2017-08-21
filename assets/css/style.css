@@ -17,30 +17,28 @@ h2{
 	font-weight: bold;
 }
 
-header, section, footer, aside, nav, hgroup{
+header, section, aside, footer, nav, hgroup{
 	display:block;
 }
 
+
 body {
-	text-align:center;
+	width:100%;
+	display:-webkit-box;
+	display-webkit-box-pack;
 	background-color:#ffffff;
 }
 
 .container{
-	border:1px solid black;
-	width:960px;
+	
+	max-width:960px;
 	margin:20px auto;
-	text-align:left;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-box-flex:1;
 	background-image:url('../../images/vertical-waves.png');
 }
 
-.clearfix:after{
-	content:"";
-	display:block;
-	height:0px;
-	clear:both;
-	visibility:hidden;
-}
 
 #top_header{
 	background-color:#ffffff;
@@ -53,8 +51,8 @@ body {
 
 #name{
 	padding-top:30px;
-	padding-bottom:30px;
 	float:left;
+	padding-bottom:30px;
 	background:#4aaaa5;
 	width:300px;
 	margin-left: 90px;
@@ -94,9 +92,16 @@ body {
 	}
 
 
+.sub-container{
+	border:black solid 2px;
+	-display:-webkit-box;
+	-webkit-box-orient:horizontal;
+	-webkit-box-flex:1;
+}
+
 #profilePic{
-	height: 200px;
 	float:left;
+	height: 200px;
 	padding-right:10px;
 	padding-top:20px;
 }
@@ -112,23 +117,24 @@ body {
 
 
 #bio{
-	width:520px;
+	float:left;
+	max-width:520px;
 	border:black 2px solid;
 	background-color:#ffffff;
-	float:left;
 	padding-left:20px;
 	padding-bottom:20px;
 	padding-right:20px;
 	margin-left:90px;
 	margin-top:30px;
 	margin-bottom:30px;
+	display:-webkit-box;
 }
 
 
 
 #links{
-	width:160px;
 	float:right;
+	width:160px;
 	border:black solid 2px;
 	text-align:center;
 	background-color:#ffffff;
@@ -136,6 +142,7 @@ body {
 	padding-right:20px;
 	padding-left:20px;
 	margin-right:70px;
+	margin-left:20px;
 	margin-top:30px;
 }
 
@@ -179,16 +186,17 @@ body {
 
 
 #Portfolio{
-	width:520px;
+	float:left;
+	max-width:520px;
 	border:black 2px solid;
 	background-color:#ffffff;
-	float:left;
 	padding-left:20px;
 	padding-bottom:20px;
 	padding-right:20px;
 	margin-left:90px;
 	margin-top:30px;
 	margin-bottom:30px;
+	display:-webkit-box;
 }
 
 #hangman{
@@ -197,6 +205,7 @@ body {
 	width:240px;
 	margin-top:20px;
 	float:left;
+	
 }
 
 		
@@ -207,6 +216,7 @@ body {
 	width:240px;
 	margin-top:20px;
 	float:right;
+	
 }
 
 
@@ -217,6 +227,7 @@ body {
 	height:150px;
 	width:240px;
 	float:left;
+	
 }
 
 		
@@ -227,6 +238,7 @@ body {
 	height:150px;
 	width:240px;
 	float:right;
+	
 }
 
 		
@@ -237,6 +249,7 @@ body {
 	height:150px;
 	width:240px;
 	float:left;
+	
 }
 
 	
@@ -276,25 +289,27 @@ transition: width 2s;
 
 
 
-
-#cForm{
-	margin:0px;
-	padding:0px;
-}
-
-
 #contact{
-	width:520px;
+	float:left;
+	max-width:520px;
 	border:black 2px solid;
 	background-color:#ffffff;
-	float:left;
 	padding-left:20px;
 	padding-bottom:20px;
 	padding-right:20px;
 	margin-left:90px;
 	margin-top:30px;
 	margin-bottom:30px;
-	overflow: hidden;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	flex:1;
+}
+
+#cForm{
+	max-width: 520px;
+	display:flex;
+	flex-wrap:wrap;
+	border:black 2px solid;
 }
 
 
@@ -306,11 +321,13 @@ transition: width 2s;
 }
 
 .fBox{
-	width:100%;
 	height:25px;
 	font-family:"Arial", "Helvetica Neue", "Helvetica", "sans-serif";
 	color:#777777;
+	margin-right:100%;
+	min-width: 100%;
 }
+
 
 #textField{
 	width:100%;
@@ -333,3 +350,6 @@ transition: width 2s;
 		color:#4aaaa5;
 		text-decoration:none;
 	}
+
+
+
