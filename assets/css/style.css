@@ -448,5 +448,41 @@ transition: width 2s;
 }
 
 @media screen and (max-width:640px) {
+		#name{
+		padding-top:30px;
+		float:left;
+		padding-bottom:30px;
+		background:#4aaaa5;
+		width:100%;
+		margin-left:0px;
+		text-align:center;
+		height:100%;
+		overflow: auto;
+	}
+
+		#menu{
+		color:#777777;
+		float:right;
+		width:100%;
+		margin-top:10px;
+		margin-bottom:10px;
+		margin-right:0px;
+		text-align:center;
+		font-family:"Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+		font-size: 20px;
+	}
+
+		#d1{
+		margin-left:5%;	
+		margin-right:5%;
+	}
+
+		#d2{
+		margin-left:5%;	
+		margin-right:5%;
+	}
+
+}
+
 
 	
